@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonAnActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <ImageButton
+                    android:id="@+id/imgBack"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:background="@drawable/btn2"
+                    android:src="@drawable/back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Thực đơn"
+                android:gravity="center|left"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgChiTiet"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/phobo"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"/>
+
+                    <ImageView
+                        android:id="@+id/imgUnLoveDish"
+                        android:layout_width="40dp"
+                        android:layout_height="37dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="1dp"
+                        android:src="@drawable/love"
+                        android:visibility="visible"
+                        app:tint="#ffff" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:layout_gravity="top|end"
+                        android:visibility="gone"
+                        android:id="@+id/loveAni"
+                        android:layout_width="41dp"
+                        android:layout_height="41dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="false"
+                        app:lottie_rawRes="@raw/love"
+                        android:scaleX="3"
+                        android:scaleY="3"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:background="@drawable/btn3"
+                        android:textColor="@color/white"
+
+                        android:fontFamily="@font/spline_sans"
+                        android:gravity="center"
+                        android:text="Yêu Thích"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:maxLines="3"
+                        android:textStyle="bold"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/shieldfood"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/txvTenChiTiet"
+                        android:fontFamily="@font/spline_sans"
+                        android:gravity="left|center"
+                        android:text="Phở Bò Việt Nam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:maxLines="3"
+                        android:textStyle="bold"
+                        android:ellipsize="end"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgStar1"
+                        android:src="@drawable/star50"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/imgStar2"
+                        android:src="@drawable/star50"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/imgStar3"
+                        android:src="@drawable/star50"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/imgStar4"
+                        android:src="@drawable/star50"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/imgStar5"
+                        android:src="@drawable/star50"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txvSao"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="4.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txvSoBinhLuan"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="(999+ Bình Luận)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/txvgiachitiet"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/baseColor"
+                        android:layout_marginLeft="3dp"
+                        android:fontFamily="@font/splinesans_bold"
+                        android:gravity="left|center"
+                        android:text="10.000VND"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        />
+                    <ImageView
+                        android:id="@+id/btnDeleChiTiet"
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/giam"
+                        />
+
+                    <TextView
+                        android:id="@+id/txvSoLuongChiTiet"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:text="1"
+                        android:gravity="center"
+                        android:textSize="21dp"
+                        android:textStyle="bold"
+                        />
+
+                    <ImageView
+                        android:id="@+id/btnAddChiTiet"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/tang"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txvmotachitiet"
+                    android:textColor="#858992"
+                    android:lineSpacingExtra="4dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Bún chả cũng là một trong những món ăn truyền thống Việt Nam gắn liền với lịch sử lâu đời của mảnh đất Hà Nội. Bún ăn cùng với chả thịt lợn nướng trên than hoa, một bát nước mắm chua cay mặn ngọt và rau sống. Trong chuyến thăm Việt Nam đầu năm 2016, cựu Tổng thống Mỹ Barack Obama cùng cố Đầu bếp lừng danh Anthony Bourdain đã thưởng thức món ăn này."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/linerAddToCart"
+                android:gravity="center"
+                android:background="@color/baseColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="100dp"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cart"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/splinesans_bold"
+                    android:textSize="19dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Đặt Mua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/saorate1"
+                            android:layout_weight="1"
+                            android:src="@drawable/star_empty"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+                        <ImageView
+                            android:id="@+id/saorate2"
+                            android:layout_weight="1"
+                            android:src="@drawable/star_empty"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+                        <ImageView
+                            android:id="@+id/saorate3"
+                            android:layout_weight="1"
+                            android:src="@drawable/star_empty"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+                        <ImageView
+                            android:id="@+id/saorate4"
+                            android:layout_weight="1"
+                            android:src="@drawable/star_empty"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+                        <ImageView
+                            android:id="@+id/saorate5"
+                            android:layout_weight="1"
+                            android:src="@drawable/star_empty"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnImgAdd"
+                        android:layout_marginLeft="3dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/add_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:tint="#AFAFAF" />
+                    <ImageButton
+                        android:id="@+id/btnSendComment"
+                        android:layout_marginLeft="3dp"
+                        android:padding="5dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/send"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:tint="@color/baseColor" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        app:cardCornerRadius="35dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+                        <ImageView
+                            android:id="@+id/imgProfileComment"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/phobo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"/>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <EditText
+                        android:id="@+id/edtComment"
+                        android:maxLines="5"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:scrollbars="vertical"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:hint="Hãy nhập cảm xúc của bạn !"
+                        android:textSize="15dp"
+                        android:paddingHorizontal="10dp"
+                        android:ellipsize="end"
+                        android:background="@drawable/comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAnh"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgAddHienThi"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/phobo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_gravity="right"
+                        android:layout_margin="3dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgXoa"
+                            android:padding="3dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dele"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/viewLoad"
+        android:background="#ffff"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/lottieLoading"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loadingbasic" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

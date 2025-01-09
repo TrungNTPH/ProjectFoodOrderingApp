@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "191872024840",
+    "firebase_url": "https://shopcake-528de-default-rtdb.firebaseio.com",
+    "project_id": "shopcake-528de",
+    "storage_bucket": "shopcake-528de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191872024840:android:424063e36b851b7df5ecbd",
+        "android_client_info": {
+          "package_name": "com.duan1.polyfood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3IEoe9O_GDfmN2hp5jIKZ6lJ_WlUS0Hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
