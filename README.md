@@ -15,9 +15,10 @@ Team Members: 3
 Repository: https://github.com/TrungNTPH/ProjectFoodOrderingApp
 
 Demo: 
-<img width="415" height="853" alt="image" src="https://github.com/user-attachments/assets/917ef920-bf61-4bf4-a062-44dad92ce0f0" />
-<img width="424" height="883" alt="image" src="https://github.com/user-attachments/assets/9310f921-c353-4c89-b8e2-21f58c47a152" />
-<img width="422" height="886" alt="image" src="https://github.com/user-attachments/assets/ad1d994a-d27c-4571-8fa4-ee536bfee27e" />
+
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/917ef920-bf61-4bf4-a062-44dad92ce0f0" />
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/9310f921-c353-4c89-b8e2-21f58c47a152" />
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/ad1d994a-d27c-4571-8fa4-ee536bfee27e" />
 
 
 🛠️ Technologies Used
